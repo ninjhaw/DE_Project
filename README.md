@@ -6,10 +6,11 @@
 
 2. Press Ctrl + ~ to open the terminal.
     Enter the command:
-    <script src="https://gist.github.com/ninjhaw/venvgist.js"></script>
+        ```python -m venv <environment_name>```
+
     Take note that a file will be added with the name of the environment you created.
 
-3. Activate the virtual environment:
+3. Activate the virtual environment: 
     a. On Windows command prompt:
         .\<your_environment_name>\Scripts\activate.bat
     b. On Windows PowerShell:
