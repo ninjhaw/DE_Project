@@ -6,7 +6,7 @@
 
 2. Press Ctrl + ~ to open the terminal.
     Enter the command:
-    <script src="https://gist.github.com/ninjhaw/312753c960fa326c4e32896b04b6d57c"></script>
+    <script src="https://gist.github.com/ninjhaw/gistfile1.txt"></script>
     Take note that a file will be added with the name of the environment you created.
 
 3. Activate the virtual environment:
