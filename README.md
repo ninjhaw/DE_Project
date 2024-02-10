@@ -1,4 +1,7 @@
-## DATA ENGINEERING PROJECT
+# DATA ENGINEERING PROJECT
 
-# Prerequisites
+## Prerequisites
 1. 
+2. 
+3.
+4.
