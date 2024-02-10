@@ -6,7 +6,7 @@
 
 2. Press Ctrl + ~ to open the terminal.
     Enter the command:
-    ```python -m venv <your_environment_name>.```
+    <script src="https://gist.github.com/ninjhaw/312753c960fa326c4e32896b04b6d57c"></script>
     Take note that a file will be added with the name of the environment you created.
 
 3. Activate the virtual environment:
