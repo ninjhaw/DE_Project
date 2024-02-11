@@ -27,8 +27,7 @@
         ```
     c. On Linux/Unix:  
 
-        ```
-        source env/bin/activate
+        ```source env/bin/activate
         ```
 
 4. Observe that the environment name (<your_environment_name>) appears on the left side before the command prompt.
