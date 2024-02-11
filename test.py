@@ -4,5 +4,7 @@ from sqlalchemy import create_engine
 
 engine = create_engine('postgresql://root:root@localhost:5432/northwind')
 
-pd.read_sql('SELECT * FROM customers')
+df = pd.read_sql('SELECT * FROM customers', engine)
+
+print(df.head())
 
