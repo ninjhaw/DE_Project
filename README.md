@@ -12,7 +12,7 @@
     ```  
 
     Replace ```<environment_name>``` with the name you want. 
-    Take note that a file will be added with the name of the environment you created. 
+    Take note that a folder will be added with the name of the environment you created. 
 
 3. Activate the virtual environment:  
     a. On Windows command prompt: 
