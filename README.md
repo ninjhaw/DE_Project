@@ -18,19 +18,19 @@
     a. On Windows command prompt:  
 
         ```bash
-        .\<your_environment_name>\Scripts\activate.bat
+        env\Scripts\activate.bat
         ```
 
     b. On Windows PowerShell:  
 
         ```bash
-        .\<your_environment_name>\Scripts\Activate.ps1
+        env\Scripts\Activate.ps1
         ```
 
     c. On Linux/Unix:  
 
         ```bash
-        source <your_environment_name>/bin/activate
+        source env/bin/activate
         ```
 
 4. Observe that the environment name (<your_environment_name>) appears on the left side before the command prompt.
