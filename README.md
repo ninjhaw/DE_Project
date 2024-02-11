@@ -7,9 +7,9 @@
 2. Press Ctrl + ~ to open the terminal.  
     Enter the command:  
 
-        ```
-        python -m venv <environment_name>
-        ```  
+    ```bash
+    python -m venv <environment_name>
+    ```  
 
     Replace ```<environment_name>``` with the name you want. 
     Take note that a file will be added with the name of the environment you created. 
