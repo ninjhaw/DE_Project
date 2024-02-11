@@ -10,15 +10,15 @@
 
 ## A. Connecting Local and Remote Repositories
 1. Create a folder in your local machine
-```
+```bash
 mkdir <folder_name>
 ```
 2. Change directory to the created folder
-```
+```bash
 cd <folder_name>
 ```
 3. Initialize git
-```
+```bash
 git init
 ```
 If you don't have git yet, you can download [here](https://github.com/ninjhaw/DE_Project?tab=readme-ov-file#prerequisites-in-this-project)
