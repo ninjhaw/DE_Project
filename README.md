@@ -1,10 +1,11 @@
 # DATA ENGINEERING PROJECT
 
-## Prerequisite in this Project
+## Prerequisites in this Project
 - Download and Install [Git](https://git-scm.com/downloads)
 - Download and Install [Postgresql](https://www.postgresql.org/download/)
 - Download and Install [SQL Server 2022 Developer Edition](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
-
+- Download and Install [Visual Studio](https://visualstudio.microsoft.com/downloads/)
+- Download and Install [PowerBI Desktop](https://powerbi.microsoft.com/en-us/downloads/)
 
 
 ## A. Setting Up Virtual Environment in Python
