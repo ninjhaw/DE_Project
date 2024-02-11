@@ -1,6 +1,10 @@
 # DATA ENGINEERING PROJECT
 
-## Setting Up Virtual Environment in Python
+## Prerequisite in this Project
+- [Git](https://git-scm.com/downloads)
+
+
+## A. Setting Up Virtual Environment in Python
 1. Open the repository in Visual Studio Code (VSCode).<br>
     Ensure that you are in the correct directory where your repository is located.
 
