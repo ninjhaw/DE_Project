@@ -7,7 +7,7 @@
 2. Press Ctrl + ~ to open the terminal.  
     Enter the command:  
 
-        ```bash
+        ```
         python -m venv <environment_name>
         ```  
 
@@ -17,16 +17,17 @@
 3. Activate the virtual environment:  
     a. On Windows command prompt: 
 
-        ```bash
+        ```
         env\Scripts\activate.bat
         ```
     b. On Windows PowerShell:  
 
-        ```bash
+        ```
         env\Scripts\Activate.ps1
         ```
     c. On Linux/Unix:  
-        ```bash
+
+        ```
         source env/bin/activate
         ```
 
