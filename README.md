@@ -1,4 +1,4 @@
-# DATA ENGINEERING PROJECT
+# DATA ENGINEERING PROJECT 🖥️
 
 ## Prerequisites in this Project
 - Download and Install [Python](https://www.python.org/downloads/)
