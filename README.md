@@ -18,24 +18,23 @@
     a. On Windows command prompt:  <br>
 
         ```bash
-            .\<your_environment_name>\Scripts\activate.bat
+        .\<your_environment_name>\Scripts\activate.bat
         ```
-        <br>  
 
     b. On Windows PowerShell:  <br>
 
         ```bash
-            .\<your_environment_name>\Scripts\Activate.ps1
+        .\<your_environment_name>\Scripts\Activate.ps1
         ```
-        <br>
 
     c. On Linux/Unix:  <br>
-    
+
         ```bash
-            source <your_environment_name>/bin/activate
+        source <your_environment_name>/bin/activate
         ```
-        <br>
 
 4. Observe that the environment name (<your_environment_name>) appears on the left side before the command prompt.
 5. You can now install packages listed in your requirements.txt file.  
-    `pip install -r requirements.txt`
+    ```bash
+    pip install -r requirements.txt
+    ```
