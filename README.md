@@ -10,7 +10,7 @@
 
 ## A. Connecting Local and Remote Repositories
 ### In your Local Machine
-1. Create a folder in your local machine
+1. Create a folder in your local machine 
 ```bash
 mkdir <folder_name>
 ```
