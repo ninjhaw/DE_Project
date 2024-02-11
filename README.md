@@ -9,6 +9,7 @@
 - Download and Install [PowerBI Desktop](https://powerbi.microsoft.com/en-us/downloads/) or in Microsoft Store 
 
 ## A. Connecting Local and Remote Repositories
+### In your Local Machine
 1. Create a folder in your local machine
 ```bash
 mkdir <folder_name>
@@ -29,11 +30,18 @@ If you don't have git yet, you can download [here](https://github.com/ninjhaw/DE
 git add README.md
 ```
 Note: You can specify a file to add. However, you can use `.` to add all files in the folder.  
-<b>6. Commit the changes you've made by typing the command in the VSCode terminal:  </b>
+6. Commit the changes you've made by typing the command in the VSCode terminal:  
 ```bash
 git commit -m "Your commit message here"
 ```
-
+7. Push file to git
+```bash
+git push
+```
+### In Github repository
+1. Go to [github](https://github.com)
+2. Navigate to the top right corner, click `+` and choose `New Repository`
+![New_repo](images/new_repository.png)
 
 ## B. Setting Up Virtual Environment in Python
 1. Open the repository in Visual Studio Code (VSCode).<br>
