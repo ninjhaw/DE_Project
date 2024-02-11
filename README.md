@@ -46,13 +46,12 @@ git push
 4. Select Public and Create repository
 5. Generate your SSH Key [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?fbclid=IwAR2z7JJtyg304j8Awvd6i60FIaopo7tuQsqXHMbziOMYfZwmIDexVZe_Y8k)  
 6. After generating the ssh key, go back to terminal and copy the first line of code below:
-![remote_add](images/push_remote.png)
-<img src="images/push_remote.png" alt="Image with Border" style="border: 1px solid white;">
+![remote_add](images/push_remote.png)  
 7. Create branch main, copy the second line of code
 8. Finally, push the changes to main branch
 
 ## Success! You push an existing repository to Github
-
+For git cheat sheet, you can view [here](cheat_sheet/git_commands.md)
 
 ## B. Setting Up Virtual Environment in Python
 1. Open the repository in Visual Studio Code (VSCode).<br>
