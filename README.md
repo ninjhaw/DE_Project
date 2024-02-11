@@ -47,7 +47,7 @@ git push
 5. Generate your SSH Key [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?fbclid=IwAR2z7JJtyg304j8Awvd6i60FIaopo7tuQsqXHMbziOMYfZwmIDexVZe_Y8k)  
 6. After generating the ssh key, go back to terminal and copy the first line of code below:
 ![remote_add](images/push_remote.png)
-<img src="images/push_remote.png" alt="Image with Border" style="border: 1px solid black;">
+<img src="images/push_remote.png" alt="Image with Border" style="border: 1px solid white;">
 7. Create branch main, copy the second line of code
 8. Finally, push the changes to main branch
 
