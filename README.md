@@ -19,10 +19,11 @@ cd <folder_name>
 ```
 3. Initialize git
 ```bash
-git init
+git init .
 ```
-If you don't have git yet, you can download [here](https://github.com/ninjhaw/DE_Project?tab=readme-ov-file#prerequisites-in-this-project)
-4. 
+If you don't have git yet, you can download [here](https://github.com/ninjhaw/DE_Project?tab=readme-ov-file#prerequisites-in-this-project)<br>
+4. Now you can create some files inside your folder. For example, README.md and put some text in it
+![README.md]('.\images\create_readme.png')
 
 
 ## B. Setting Up Virtual Environment in Python
