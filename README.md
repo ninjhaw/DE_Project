@@ -21,7 +21,8 @@ cd <folder_name>
 ```
 git init
 ```
-You'll notice a hidden-like folder `.git`
+If you don't have git yet, you can download [here](https://github.com/ninjhaw/DE_Project?tab=readme-ov-file#prerequisites-in-this-project)
+4. 
 
 
 ## B. Setting Up Virtual Environment in Python
