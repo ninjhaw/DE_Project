@@ -8,8 +8,23 @@
 - Download and Install [Visual Studio](https://visualstudio.microsoft.com/downloads/)
 - Download and Install [PowerBI Desktop](https://powerbi.microsoft.com/en-us/downloads/) or in Microsoft Store 
 
+## A. Connecting Local and Remote Repositories
+1. Create a folder in your local machine
+```
+mkdir <folder_name>
+```
+2. Change directory to the created folder
+```
+cd <folder_name>
+```
+3. Initialize git
+```
+git init
+```
+You'll notice a hidden-like folder `.git`
 
-## A. Setting Up Virtual Environment in Python
+
+## B. Setting Up Virtual Environment in Python
 1. Open the repository in Visual Studio Code (VSCode).<br>
     Ensure that you are in the correct directory where your repository is located.
 
