@@ -29,7 +29,7 @@ If you don't have git yet, you can download [here](https://github.com/ninjhaw/DE
 git add README.md
 ```
 Note: You can specify a file to add. However, you can use `.` to add all files in the folder.  
-6. Commit the changes you've made by typing the command in the VSCode terminal:  
+<b>6. Commit the changes you've made by typing the command in the VSCode terminal:  </b>
 ```bash
 git commit -m "Your commit message here"
 ```
