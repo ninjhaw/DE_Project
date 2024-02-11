@@ -51,7 +51,7 @@ git push
 8. Finally, push the changes to main branch
 
 ## Success! You push an existing repository to Github
-For git cheat sheet, you can view [here](cheat_sheet/git_commands.md)
+- For git cheat sheet, you can view [here](cheat_sheet/git_commands.md)
 
 ## B. Setting Up Virtual Environment in Python
 1. Open the repository in Visual Studio Code (VSCode).<br>
