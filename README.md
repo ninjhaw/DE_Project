@@ -1,7 +1,10 @@
 # DATA ENGINEERING PROJECT
 
 ## Prerequisite in this Project
-- [Git](https://git-scm.com/downloads)
+- Download and Install [Git](https://git-scm.com/downloads)
+- Download and Install [Postgresql](https://www.postgresql.org/download/)
+- Download and Install [SQL Server 2022 Developer Edition](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+
 
 
 ## A. Setting Up Virtual Environment in Python
