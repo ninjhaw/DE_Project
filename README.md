@@ -21,9 +21,9 @@ cd <folder_name>
 ```bash
 git init .
 ```
-If you don't have git yet, you can download [here](https://github.com/ninjhaw/DE_Project?tab=readme-ov-file#prerequisites-in-this-project)<br>
-4. Now you can create some files inside your folder. For example, README.md and put some text in it.<br>
-![README.md](/images/create_readme.png)  
+If you don't have git yet, you can download [here](https://github.com/ninjhaw/DE_Project?tab=readme-ov-file#prerequisites-in-this-project)  
+4. Now you can create some files inside your folder. For example, README.md and put some text in it.  
+![README.md](/images/create_readme.png)  <br>
 5. Add file to the staging area by typing the command in the VSCode terminal:
 ```bash
 git add README.md
