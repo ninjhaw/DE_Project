@@ -24,4 +24,5 @@ engine = connect_to_postgres()
 df = pd.read_sql('SELECT * FROM customers', engine)
 
 print(df.head())
+print(df.info())
 
