@@ -56,3 +56,5 @@ def greet(name):
 result = greet("Alice")
 print(result)
 ```
+
+For more info, you may visit [here](https://docs.python.org/3.12/)
