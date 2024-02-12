@@ -70,7 +70,7 @@ git push
 3. Activate the virtual environment:  
     a. On Windows command prompt: 
 
-    ```
+    ```bash
     env\Scripts\activate.bat
     ```
     b. On Windows PowerShell:  
