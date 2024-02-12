@@ -1,3 +1,5 @@
 # exclude packages and dependencies to github
 dev_env/
 
+# exclude json containing config credentials
+config.json
