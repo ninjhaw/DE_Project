@@ -1,7 +1,6 @@
-import pandas as pd
-import psycopg2
 from sqlalchemy import create_engine
-import json
+import pandas as pd
+import psycopg2, json
 
 # read the json file to python dict
 def get_postgres_credentials(path='config.json'):
@@ -25,4 +24,3 @@ df = pd.read_sql('SELECT * FROM employees', engine)
 
 print(df.head())
 print(df.info())
-
