@@ -21,7 +21,7 @@ def connect_to_postgres():
 
 engine = connect_to_postgres()
 
-df = pd.read_sql('SELECT * FROM customers', engine)
+df = pd.read_sql('SELECT * FROM employees', engine)
 
 print(df.head())
 print(df.info())
