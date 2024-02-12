@@ -90,3 +90,9 @@ git push
     ```bash
     pip install -r requirements.txt
     ```
+
+Join our community:  
+    Discord: [Data Engineering Pilipinas](https://discord.gg/H8fuv5DF)
+             [DataCamp](https://discord.gg/UUWAEQQ6)
+    FB Group: [Data Engineering Pilipinas](https://www.facebook.com/groups/dataengineeringpilipinas/)
+Follow: [Josh Dev](https://www.facebook.com/profile.php?id=100087019650476)
