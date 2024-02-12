@@ -90,5 +90,3 @@ git push
     ```bash
     pip install -r requirements.txt
     ```
-
-    
