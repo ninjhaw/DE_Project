@@ -75,12 +75,12 @@ git push
     ```
     b. On Windows PowerShell:  
 
-    ```
+    ```bash
     env\Scripts\Activate.ps1
     ```
     c. On Linux/Unix:  
 
-    ```
+    ```bash
     source env/bin/activate
     ```
 
