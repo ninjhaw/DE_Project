@@ -87,7 +87,7 @@ git push
 4. Observe that the environment name (<your_environment_name>) appears on the left side before the command prompt.
 5. You can now install packages listed in your requirements.txt file. 
 
-    ```python
+    ```bash
     pip install -r requirements.txt
     ```
 
