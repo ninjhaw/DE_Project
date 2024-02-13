@@ -3,3 +3,6 @@ dev_env/
 
 # exclude json containing config credentials
 config.json
+
+# exclude images
+images/
