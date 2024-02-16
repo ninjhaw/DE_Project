@@ -1,4 +1,5 @@
 # DATA ENGINEERING PROJECT 🖥️
+Guided By: [Josh Dev](https://www.facebook.com/profile.php?id=100087019650476)<br>
 
 ## Prerequisites in this Project
 - Download and Install [Python](https://www.python.org/downloads/)
@@ -70,17 +71,17 @@ git push
 3. Activate the virtual environment:  
     a. On Windows command prompt: 
 
-    ```
+    ```bash
     env\Scripts\activate.bat
     ```
     b. On Windows PowerShell:  
 
-    ```
+    ```bash
     env\Scripts\Activate.ps1
     ```
     c. On Linux/Unix:  
 
-    ```
+    ```bash
     source env/bin/activate
     ```
 
@@ -95,4 +96,4 @@ git push
 Discord: [Data Engineering Pilipinas](https://discord.gg/H8fuv5DF),
          [DataCamp](https://discord.gg/UUWAEQQ6)<br>
 FB Group: [Data Engineering Pilipinas](https://www.facebook.com/groups/dataengineeringpilipinas/)<br>
-Follow: [Josh Dev](https://www.facebook.com/profile.php?id=100087019650476)
+You may also visit Data Engineering Website [here](https://dataengineering.ph/)
