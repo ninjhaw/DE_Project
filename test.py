@@ -24,3 +24,5 @@ df = pd.read_sql('SELECT * FROM customers', engine)
 
 print(df.head())
 print(df.info())
+
+print('hello world')
