@@ -3,3 +3,5 @@ sqlalchemy
 psycopg2
 matplotlib
 requests
+paramiko
+pysftp
