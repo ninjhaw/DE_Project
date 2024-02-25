@@ -23,4 +23,7 @@ def read_csv(config: dict) -> pd.DataFrame:
 if __name__ == "__main__":
     get_ftp()
     
-    
+    with open("config.json", "rb") as file:
+        config = json.load(file)
+        
+    print(config)
