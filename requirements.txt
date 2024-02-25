@@ -1,5 +1,6 @@
 pandas
 pyarrow
+schedule
 sqlalchemy
 psycopg2
 matplotlib
