@@ -35,13 +35,13 @@ def pipeline():
         print(f"Downloaded {source_name}.")
         
         upload_to_ftp(ftp, filename)
-        print(f"{source_name} uploaded to FTP Server..")
+        print(f"{source_name} uploaded to FTP Server..\n")
     
     
 
 if __name__ == "__main__":
     
-    schedule.every().day.at("23:32").do(pipeline)
+    schedule.every().day.at("23:46").do(pipeline)
     
     while 1:
         schedule.run_pending()
