@@ -14,15 +14,18 @@ def get_ftp() -> FTP_TLS:
     ftp.prot_p()
     return ftp
 
+# Upload files to FTP SERVER
 def upload_to_ftp(ftp: FTP_TLS, file_source: Path):
     with open(file_source, "rb") as file:
         ftp.storbinary(f"STOR {file_source.name}", file)
 
+# READ THE FILES in DATAFRAME
 def read_csv(config: dict) -> pd.DataFrame:
     url = config["URL"]
     params = config["PARAMS"]
     return pd.read_csv(url, **params)
 
+# Execute the task read_csv and upload_to_ftp
 def pipeline():
     ftp = get_ftp()
     with open("config.json", "rb") as file:
