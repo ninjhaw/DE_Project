@@ -39,8 +39,7 @@ def pipeline():
         
         upload_to_ftp(ftp, filename)
         print(f"{source_name} uploaded to FTP Server..\n")
-    
-    
+
 
 if __name__ == "__main__":
     
