@@ -1,0 +1,55 @@
+{
+    "CONS_PRIM": {
+        "URL": "https://www.treasury.gov/ofac/downloads/consolidated/cons_prim.csv",
+        "PARAMS": {
+            "names": [
+                "ent_num",
+                "sdn_name",
+                "sdn_type",
+                "program",
+                "title",
+                "call_sign",
+                "vess_type",
+                "tonnage",
+                "grt",
+                "vess_flag",
+                "vess_owner",
+                "remarks"
+            ],
+            "na_values": "-0-",
+            "skipfooter": 1,
+            "engine": "python"
+        }
+    },
+    "CONS_ADD": {
+        "URL": "https://www.treasury.gov/ofac/downloads/consolidated/cons_add.csv",
+        "PARAMS": {
+            "names": [
+                "ent_num",
+                "add_num",
+                "address",
+                "complete_address",
+                "country",
+                "add_remarks"
+            ],
+            "na_values": "-0-",
+            "skipfooter": 1,
+            "engine": "python"
+        }
+    },
+    "CONS_ALT": {
+        "URL": "https://www.treasury.gov/ofac/downloads/consolidated/cons_alt.csv",
+        "PARAMS": {
+            "names": [
+                "ent_num",
+                "alt_num",
+                "alt_type",
+                "alt_name",
+                "alt_remarks"
+            ],
+            "na_values": "-0-",
+            "skipfooter": 1,
+            "engine": "python"
+        }
+    }
+}
