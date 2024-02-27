@@ -169,6 +169,8 @@ git push
     ```bash
     echo "ftpuser" | sudo tee -a /etc/vsftpd.chroot_list
     ```
+Great! Now you're ready to connect your FTP Server to Python!
+
 
 
 

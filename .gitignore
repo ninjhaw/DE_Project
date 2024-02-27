@@ -3,3 +3,6 @@ dev_env/
 
 # exclude json files
 *.json
+!config.json
+
+.vscode
