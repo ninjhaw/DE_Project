@@ -91,6 +91,87 @@ git push
     ```bash
     pip install -r requirements.txt
     ```
+## Uploading Files from Web to FTP Server
+1. Download and Install WSL(Windows for Subsytem for Linux)
+    To see Linux distributions:
+    ```bash
+    wsl --list -o
+    ```
+    To install wsl:
+    ```bash
+    wsl --install -d Ubuntu
+    ```
+
+    Note: Ubuntu is the default distro when not specified
+
+2. Download FTP Server(vsftpd) in wsl
+    ```bash
+    sudo apt install vsftpd
+    ```
+    or
+    ```bash
+    sudo apt install vsftpd -y
+    ```
+3. (Optional) Backup vsftpd.conf
+    Though this is optional, it is a good practice to backup configuration files when trying to modify it for recovery.
+
+    a. Navigate to vsftpd.conf
+    ```bash
+    ls /etc/
+    ```
+    You will see the files inside /etc/ folder including the vsftpd.conf. Now, it's time to back it up
+    b. Backup vsftpd.conf
+    ```bash
+    cp /etc/vsftpd.conf /etc/vsftpd.conf_backup
+    ```
+    Use `cp` command to copy and paste it in same directory
+    `cp <source> <destination>`
+
+    You must have administrative priveleges in order to do this.
+4. Modify vsftpd.conf
+    In this part we will modify vsftpd.conf using nano
+    Uncomment or add this line in vsftpd.conf:
+    ```bash
+    local_enable=YES
+    write_enable=YES
+    chroot_local_user=YES
+    chroot_list_enable=YES
+    chroot_list_file=/etc/vsftpd.chroot_list # or just uncomment
+    ssl_enable=YES
+    require_ssl_reuse=NO # add to the bottom of the file
+    ```
+5. Restarting and Checking vsftpd status
+    a. vsftpd status
+    ```bash
+    sudo systemctl status vsftpd
+    ```
+    b. restart vsftpd service
+    ```bash
+    sudo systemctl restart vsftpd
+    ```
+    Note: after some or any changes in the conf, you must restart the service or else it won't work.
+6. Creating an FTP User
+    ```bash
+    sudo adduser <username>
+    ```
+    a. Create directory for ftp user
+    ```bash
+    mkdir /home/ftpuser/ftp
+    ```
+    b. Change the access/ownership of the directory
+    ```bash
+    chown nobody:nogroup /home/ftpuser/ftp
+    ```
+    ```bash
+    chmod a-w /home/ftpuser/ftp
+    ```
+    c. Create also a file for chroot_list
+    ```bash
+    echo "ftpuser" | sudo tee -a /etc/vsftpd.chroot_list
+    ```
+
+
+
 
 ### Join our community: <br> 
 Discord: [Data Engineering Pilipinas](https://discord.gg/H8fuv5DF),
