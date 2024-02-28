@@ -1,9 +1,10 @@
 from logging import config
 import pandas as pd
-import psycopg2, json, time, schedule
+import json, time, schedule
 from ftplib import FTP_TLS
 from os import environ
 from pathlib import Path
+import sys
 
 def get_ftp() -> FTP_TLS:
     FTPHOST = environ["FTPHOST"]
@@ -35,17 +36,22 @@ def pipeline():
         filename = Path(f'datasets/{source_name}.csv')
         df = read_csv(source_config)
         df.to_csv(filename, index=False)
-        print(f"Downloaded {source_name}.")
+        print(f"Downloaded {source_name}.\nUploading....")
         
         upload_to_ftp(ftp, filename)
-        print(f"{source_name} uploaded to FTP Server..\n")
+        print(f"{source_name} uploaded to FTP Server.\n")
 
 
 if __name__ == "__main__":
     
-    schedule.every().day.at("23:46").do(pipeline)
-    
-    while 1:
-        schedule.run_pending()
-        time.sleep(1)
-    
+    params = sys.argv[1]
+    if params == 'manual':
+        pipeline()
+    elif params == "schedule":
+        schedule.every().day.at("23:46").do(pipeline)
+        
+        while 1:
+            schedule.run_pending()
+            time.sleep(1)
+    else:
+        print(f"Error: No such parameter `{params}`")
