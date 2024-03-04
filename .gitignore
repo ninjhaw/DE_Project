@@ -6,3 +6,4 @@ dev_env/
 !config.json
 
 .vscode
+.vs
