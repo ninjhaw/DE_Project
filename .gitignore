@@ -5,6 +5,7 @@ dev_env/
 *.json
 !config.json
 
+.mypy_cache
 .vscode
 .vs
 Documentations/
