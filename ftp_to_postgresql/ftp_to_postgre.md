@@ -1,4 +1,4 @@
-PART 1
+## PART 1
 1. Get the files from FTP Server to Local folder
 2. Create FTP Task
     a. requires connection manager
@@ -27,7 +27,7 @@ PART 1
 6. Executing task
     a. Right Click the FTP Task > Execute task
 
-PART2
+## PART2
 1. Data Flow Task
     a. Double-click dataflow task
     b. On the left side pane, go to Other Sources > Flat File Source

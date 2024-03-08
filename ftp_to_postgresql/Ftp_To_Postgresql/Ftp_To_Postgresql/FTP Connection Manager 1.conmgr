@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="FTP Connection Manager 1"
+  DTS:DTSID="{65445DA6-0288-43CC-8F27-F07FA1E68306}"
+  DTS:CreationName="FTP">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="172.31.67.251:21">
+      <DTS:FtpConnection
+        DTS:ServerName="172.31.67.251"
+        DTS:ServerUserName="ftpuser">
+        <DTS:Property
+          DTS:Name="ServerPassword"
+          Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZO+QSCDlmEinDNYQdHWPJQAAAAACAAAAAAAQZgAAAAEAACAAAACb38BiEZN33+MVbmaw3MYSdflHH3BfqzXm00LXE/b6twAAAAAOgAAAAAIAACAAAACJ8DqYLWXnF8IY4o8dpNu8Fylf2AM/NkNcUdUWRrqP/YAAAABobBpkirM4jcw0qJkWZZKE5U7z6u1wRIJQojHjuuYXu/4jjRAjSTBQ+/sQcR7j3JpgXtYlEutxnD22lUweCav8sp7eeQyTaVmp6MUxNB5FVFZzrNXNTuN/PxMKiQYheI28KSUeoN+nryU8KirMHjE7EcLdEOzKof9pGzzQn3scOkAAAADa77iIxaPimHVlWNnjDFx0SjygER230kiDw0k44N8SpILPND9JiFcQ296ToDNF+5NtIyWK9IoCwBEX5wrkTBf+</DTS:Property>
+      </DTS:FtpConnection>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,7 +1,7 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="CSV_OFAC_ADD"
-  DTS:DTSID="{C889AC66-F6F3-4F59-A2FA-9F96EF2D1801}"
+  DTS:ObjectName="OFAC_CSV_ADD"
+  DTS:DTSID="{0EB40949-8649-4024-A140-2B6382F42871}"
   DTS:CreationName="FLATFILE">
   <DTS:ObjectData>
     <DTS:ConnectionManager
@@ -20,7 +20,7 @@
           DTS:DataType="3"
           DTS:TextQualified="True"
           DTS:ObjectName="ent_num"
-          DTS:DTSID="{893F45EC-72DC-44DE-93F9-DF697286AFC8}"
+          DTS:DTSID="{7FA0D8CE-0333-4D66-94FC-450A3C6557D4}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -28,7 +28,7 @@
           DTS:DataType="3"
           DTS:TextQualified="True"
           DTS:ObjectName="add_num"
-          DTS:DTSID="{6B1A5169-D059-4537-A02C-0DF1B449D084}"
+          DTS:DTSID="{42D30268-D9A9-4A69-906D-81E0F814A27D}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -37,7 +37,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="address"
-          DTS:DTSID="{6AD0EB57-20A6-45F3-93B9-CF57DCAEB64D}"
+          DTS:DTSID="{11A47567-277D-4288-AF70-44EE03BD5F3C}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -46,7 +46,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="complete_address"
-          DTS:DTSID="{D8144F5A-19BE-478F-8BA3-8D054C52BEE6}"
+          DTS:DTSID="{AFD2A2DA-DBD4-4647-9931-9F9FD4F13806}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -55,7 +55,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="country"
-          DTS:DTSID="{66FAB44C-612C-48F4-BD87-0CFA8EF3B0D0}"
+          DTS:DTSID="{2F867586-4AC2-4D87-8CC6-3F2A910AF5A6}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -64,7 +64,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="add_remarks"
-          DTS:DTSID="{F80C5E40-1862-4F10-B1AF-0231A70223E7}"
+          DTS:DTSID="{82E5AD01-C341-4985-9DFE-FAF61933026D}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

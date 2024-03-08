@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>Ftp_To_Postgresql</Name>
-    <LastWriteTime>2024-03-04T09:55:36.6580083Z</LastWriteTime>
+    <LastWriteTime>2024-03-08T07:37:31.9845067Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Main.dtsx</Name>
-      <LastWriteTime>2024-03-06T06:44:02.8018556Z</LastWriteTime>
+      <LastWriteTime>2024-03-08T07:46:27.8241267Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

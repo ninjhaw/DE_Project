@@ -1,7 +1,7 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="CSV_OFAC_ALT"
-  DTS:DTSID="{C945C782-C1E9-4DA1-A1BC-F31016359755}"
+  DTS:ObjectName="OFAC_CSV_ALT"
+  DTS:DTSID="{943EFBC3-B302-4957-8295-36C420E0D8C1}"
   DTS:CreationName="FLATFILE">
   <DTS:ObjectData>
     <DTS:ConnectionManager
@@ -20,7 +20,7 @@
           DTS:DataType="3"
           DTS:TextQualified="True"
           DTS:ObjectName="ent_num"
-          DTS:DTSID="{EF26DEFC-9566-459A-A677-82FC95B3627A}"
+          DTS:DTSID="{3D00BDD6-EA98-4A23-BBA4-B2476E24DA10}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -28,7 +28,7 @@
           DTS:DataType="3"
           DTS:TextQualified="True"
           DTS:ObjectName="alt_num"
-          DTS:DTSID="{37D3A3C2-92C4-4FB8-9B52-32E428A046CE}"
+          DTS:DTSID="{B92F702B-E834-4C0F-BCFE-A1103AB52787}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -37,7 +37,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="alt_type"
-          DTS:DTSID="{BECF39B2-D222-42E2-AA54-71D39E56EAF1}"
+          DTS:DTSID="{E4C26A3C-9B1A-4C97-AEC2-60C3012AB0FD}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -46,7 +46,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="alt_name"
-          DTS:DTSID="{2362646B-E5D6-41FE-8573-E14CED006FC2}"
+          DTS:DTSID="{E54F6781-3DAC-4035-B58D-34DCE6782655}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -55,7 +55,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="alt_remarks"
-          DTS:DTSID="{1580B3C1-D126-4CEB-BBA4-410C24E3C00E}"
+          DTS:DTSID="{9FA53EF6-9033-4063-A82D-94874AC7555B}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

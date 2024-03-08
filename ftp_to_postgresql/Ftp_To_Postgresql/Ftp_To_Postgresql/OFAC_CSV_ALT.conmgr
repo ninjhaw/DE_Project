@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="CSV_OFAC_ADD"
-  DTS:DTSID="{C889AC66-F6F3-4F59-A2FA-9F96EF2D1801}"
+  DTS:ObjectName="OFAC_CSV_ALT"
+  DTS:DTSID="{943EFBC3-B302-4957-8295-36C420E0D8C1}"
   DTS:CreationName="FLATFILE">
   <DTS:ObjectData>
     <DTS:ConnectionManager
@@ -12,7 +12,7 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x0022_"
       DTS:CodePage="1252"
-      DTS:ConnectionString="D:\Projects\DE_Project\ftp_to_postgresql\Extracts\CONS_ADD.csv">
+      DTS:ConnectionString="D:\Projects\DE_Project\ftp_to_postgresql\Extracts\CONS_ALT.csv">
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -20,42 +20,33 @@
           DTS:DataType="3"
           DTS:TextQualified="True"
           DTS:ObjectName="ent_num"
-          DTS:DTSID="{D04012E8-1A62-4FD4-8357-216F0AC8EAA1}"
+          DTS:DTSID="{3D00BDD6-EA98-4A23-BBA4-B2476E24DA10}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
           DTS:ColumnDelimiter="_x002C_"
           DTS:DataType="3"
           DTS:TextQualified="True"
-          DTS:ObjectName="add_num"
-          DTS:DTSID="{147A0BB9-F649-41B3-8B88-1224AC5231AE}"
+          DTS:ObjectName="alt_num"
+          DTS:DTSID="{B92F702B-E834-4C0F-BCFE-A1103AB52787}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
           DTS:ColumnDelimiter="_x002C_"
-          DTS:MaximumWidth="750"
+          DTS:MaximumWidth="8"
           DTS:DataType="129"
           DTS:TextQualified="True"
-          DTS:ObjectName="address"
-          DTS:DTSID="{782928AE-04D9-4EE5-A4F3-224FD37F2856}"
+          DTS:ObjectName="alt_type"
+          DTS:DTSID="{E4C26A3C-9B1A-4C97-AEC2-60C3012AB0FD}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
           DTS:ColumnDelimiter="_x002C_"
-          DTS:MaximumWidth="116"
+          DTS:MaximumWidth="350"
           DTS:DataType="129"
           DTS:TextQualified="True"
-          DTS:ObjectName="complete_address"
-          DTS:DTSID="{FCFA1689-4BEF-4D20-A2EC-F5D8B83FBC5A}"
-          DTS:CreationName="" />
-        <DTS:FlatFileColumn
-          DTS:ColumnType="Delimited"
-          DTS:ColumnDelimiter="_x002C_"
-          DTS:MaximumWidth="250"
-          DTS:DataType="129"
-          DTS:TextQualified="True"
-          DTS:ObjectName="country"
-          DTS:DTSID="{F699EAEE-1FE3-4CD3-ACC0-8321DFFB6F0C}"
+          DTS:ObjectName="alt_name"
+          DTS:DTSID="{E54F6781-3DAC-4035-B58D-34DCE6782655}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -63,8 +54,8 @@
           DTS:MaximumWidth="200"
           DTS:DataType="129"
           DTS:TextQualified="True"
-          DTS:ObjectName="add_remarks"
-          DTS:DTSID="{7C5E01F9-1EF3-4D8E-9A7A-5B834BD5974D}"
+          DTS:ObjectName="alt_remarks"
+          DTS:DTSID="{9FA53EF6-9033-4063-A82D-94874AC7555B}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

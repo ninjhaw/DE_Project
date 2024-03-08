@@ -11,14 +11,14 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Main"
   DTS:PackageType="5"
-  DTS:VersionBuild="63"
-  DTS:VersionGUID="{5ED65AC8-1400-46BA-82B1-1B86575C14D3}">
+  DTS:VersionBuild="86"
+  DTS:VersionGUID="{5F862DD2-A7F4-4633-A0B2-704198B7C1FC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{D63EB829-DFA2-4D19-A450-149C00AA08BC}"
+      DTS:DTSID="{3493559C-E97C-44F5-9434-3218875AD7C5}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="ExtractFolder">
@@ -27,32 +27,15 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{181E9CB7-06E7-4EA4-9373-34CAB0FEFFCA}"
+      DTS:DTSID="{E5C84548-1B13-4533-8FD8-AC481948478F}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="SourceFolder">
       <DTS:VariableValue
-        DTS:DataType="8">/home/ftpuser/ftp/new/*csv</DTS:VariableValue>
+        DTS:DataType="8">/home/ftpuser/ftp/new/*.csv</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
-    <DTS:Executable
-      DTS:refId="Package\Data Cleaning Task"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Set `-0-` values to NULL values"
-      DTS:DTSID="{FF15365F-F5F1-4FED-8B64-CF6F9512A863}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Data Cleaning Task"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{9CEA93BC-FEDD-41C7-9208-86DDAE220EA7}"
-          SQLTask:SqlStatementSource="UPDATE ofac_cons_prim SET sdn_type=NULL WHERE sdn_type LIKE '%-0-%';&#xA;UPDATE ofac_cons_prim SET title=NULL WHERE title LIKE '%-0-%';&#xA;UPDATE ofac_cons_prim SET call_sign=NULL WHERE call_sign LIKE '%-0-%';&#xA;UPDATE ofac_cons_prim SET vess_type=NULL WHERE vess_type LIKE '%-0-%';&#xA;UPDATE ofac_cons_prim SET tonnage=NULL WHERE tonnage LIKE '%-0-%';&#xA;UPDATE ofac_cons_prim SET grt=NULL WHERE grt LIKE '%-0-%';&#xA;UPDATE ofac_cons_prim SET vess_flag=NULL WHERE vess_flag LIKE '%-0-%';&#xA;UPDATE ofac_cons_prim SET vess_owner=NULL WHERE vess_owner LIKE '%-0-%';&#xA;&#xA;&#xA;UPDATE ofac_cons_add SET address=NULL WHERE address LIKE '%-0-%';&#xA;UPDATE ofac_cons_add SET complete_address=NULL WHERE complete_address LIKE '%-0-%';&#xA;UPDATE ofac_cons_add SET country=NULL WHERE country LIKE '%-0-%';&#xA;UPDATE ofac_cons_add SET add_remarks=NULL WHERE add_remarks LIKE '%-0-%';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-      </DTS:ObjectData>
-    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Download OFAC csv files from FTP"
       DTS:CreationName="Microsoft.FtpTask"
@@ -66,13 +49,14 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <FtpData
-          ConnectionName="{913BE1EA-700F-4BB0-BE43-E4B1B99B52A4}"
+          ConnectionName="{65445DA6-0288-43CC-8F27-F07FA1E68306}"
           TaskOperationType="Receive"
           TaskIsLocalPathVar="True"
           TaskLocalPath="User::ExtractFolder"
           TaskIsRemotePathVar="True"
           TaskRemotePath="User::SourceFolder"
-          TaskOverwriteDest="True" />
+          TaskOverwriteDest="True"
+          TaskTransferAscii="True" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -2322,8 +2306,8 @@
                   <connections>
                     <connection
                       refId="Package\Parallel Execution of Data Flow Tasks\CONS_ADD csv to postgre\CSV FILE.Connections[FlatFileConnection]"
-                      connectionManagerID="{C889AC66-F6F3-4F59-A2FA-9F96EF2D1801}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[CSV_OFAC_ADD]"
+                      connectionManagerID="{0EB40949-8649-4024-A140-2B6382F42871}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[OFAC_CSV_ADD]"
                       name="FlatFileConnection" />
                   </connections>
                   <outputs>
@@ -2734,8 +2718,8 @@
                   <connections>
                     <connection
                       refId="Package\Parallel Execution of Data Flow Tasks\CONS_ALT csv to postgre\CSV FILE.Connections[FlatFileConnection]"
-                      connectionManagerID="{C945C782-C1E9-4DA1-A1BC-F31016359755}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[CSV_OFAC_ALT]"
+                      connectionManagerID="{943EFBC3-B302-4957-8295-36C420E0D8C1}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[OFAC_CSV_ALT]"
                       name="FlatFileConnection" />
                   </connections>
                   <outputs>
@@ -3212,8 +3196,8 @@
                   <connections>
                     <connection
                       refId="Package\Parallel Execution of Data Flow Tasks\CONS_PRIM csv to postgre\CSV FILE.Connections[FlatFileConnection]"
-                      connectionManagerID="{10133386-5E59-4AAD-B125-C864B5834A9D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[CSV_OFAC_PRIM]"
+                      connectionManagerID="{4C8913F6-FFCF-48A0-93EE-53C0D3BB0BC0}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[OFAC_CSV_PRIM]"
                       name="FlatFileConnection" />
                   </connections>
                   <outputs>
@@ -3488,7 +3472,7 @@
                         isUsed="True">
                         <externalMetadataColumn
                           refId="Package\Parallel Execution of Data Flow Tasks\CONS_PRIM csv to postgre\CSV FILE.Outputs[Flat File Source Output].ExternalColumns[ent_num]"
-                          dataType="i4"
+                          dataType="ui4"
                           name="ent_num" />
                         <externalMetadataColumn
                           refId="Package\Parallel Execution of Data Flow Tasks\CONS_PRIM csv to postgre\CSV FILE.Outputs[Flat File Source Output].ExternalColumns[sdn_name]"
@@ -3657,9 +3641,9 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="273,42"
+          Size="252,42"
           Id="Package\Download OFAC csv files from FTP"
-          TopLeft="14.25,117" />
+          TopLeft="14.25,115" />
         <NodeLayout
           Size="186,48"
           Id="Package\Merge CONS tables"
@@ -3671,7 +3655,7 @@
         <NodeLayout
           Size="208,42"
           Id="Package\Parallel Execution of Data Flow Tasks\CONS_ALT csv to postgre"
-          TopLeft="21.75,21.2499999999999" />
+          TopLeft="21.75,20.2499999999999" />
         <NodeLayout
           Size="209,42"
           Id="Package\Parallel Execution of Data Flow Tasks\CONS_PRIM csv to postgre"
@@ -3679,8 +3663,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="302,208"
-          Size="302,251"
+          PanelSize="302,239"
+          Size="302,282"
           Id="Package\Parallel Execution of Data Flow Tasks"
           TopLeft="625.5,85.5" />
         <NodeLayout
@@ -3689,30 +3673,30 @@
           TopLeft="258.25,209.75" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="150.75,159">
+          TopLeft="140.25,157">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="204,50.75"
+              EndConnector="214.5,52.75"
               Start="0,0"
-              End="204,43.25">
+              End="214.5,45.25">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.375" />
+                    End="0,22.375" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,21.375"
-                    Point2="0,25.375"
-                    Point3="4,25.375" />
+                    Point1="0,22.375"
+                    Point2="0,26.375"
+                    Point3="4,26.375" />
                   <mssgle:LineSegment
-                    End="200,25.375" />
+                    End="210.5,26.375" />
                   <mssgle:CubicBezierSegment
-                    Point1="200,25.375"
-                    Point2="204,25.375"
-                    Point3="204,29.375" />
+                    Point1="210.5,26.375"
+                    Point2="214.5,26.375"
+                    Point3="214.5,30.375" />
                   <mssgle:LineSegment
-                    End="204,43.25" />
+                    End="214.5,45.25" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3723,30 +3707,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="451.25,230.75">
+          TopLeft="451.25,228.625">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="174.25,-19.75"
+              EndConnector="174.25,0"
               Start="0,0"
-              End="166.75,-19.75">
+              End="166.75,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="83.125,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="83.125,0"
-                    Point2="87.125,0"
-                    Point3="87.125,-4" />
-                  <mssgle:LineSegment
-                    End="87.125,-15.75" />
-                  <mssgle:CubicBezierSegment
-                    Point1="87.125,-15.75"
-                    Point2="87.125,-19.75"
-                    Point3="91.125,-19.75" />
-                  <mssgle:LineSegment
-                    End="166.75,-19.75" />
+                    End="166.75,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3755,36 +3727,32 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="216,42"
-          Id="Package\Data Cleaning Task"
-          TopLeft="599,403.75" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="776.5,336.5">
+          TopLeft="776.5,367.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-421.75,82.75"
+              EndConnector="-421.75,51.75"
               Start="0,0"
-              End="-421.75,75.25">
+              End="-421.75,44.25">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.375" />
+                    End="0,21.875" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,37.375"
-                    Point2="0,41.375"
-                    Point3="-4,41.375" />
+                    Point1="0,21.875"
+                    Point2="0,25.875"
+                    Point3="-4,25.875" />
                   <mssgle:LineSegment
-                    End="-417.75,41.375" />
+                    End="-417.75,25.875" />
                   <mssgle:CubicBezierSegment
-                    Point1="-417.75,41.375"
-                    Point2="-421.75,41.375"
-                    Point3="-421.75,45.375" />
+                    Point1="-417.75,25.875"
+                    Point2="-421.75,25.875"
+                    Point3="-421.75,29.875" />
                   <mssgle:LineSegment
-                    End="-421.75,75.25" />
+                    End="-421.75,44.25" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3800,7 +3768,7 @@
     design-time-name="Package\Merge CONS tables">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="169,42"
           Id="Package\Merge CONS tables\ODBC Destination"
@@ -3856,7 +3824,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3890,7 +3860,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3924,7 +3896,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3958,7 +3932,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3992,7 +3968,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4056,13 +4034,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="128,42"
-          Id="Package\Parallel Execution of Data Flow Tasks\CONS_ADD csv to postgre\CSV FILE"
-          TopLeft="30,38" />
-        <NodeLayout
           Size="141,42"
           Id="Package\Parallel Execution of Data Flow Tasks\CONS_ADD csv to postgre\CONS Table"
           TopLeft="30,170" />
+        <NodeLayout
+          Size="128,42"
+          Id="Package\Parallel Execution of Data Flow Tasks\CONS_ADD csv to postgre\CSV FILE"
+          TopLeft="30,38" />
         <EdgeLayout
           Id="Package\Parallel Execution of Data Flow Tasks\CONS_ADD csv to postgre.Paths[Flat File Source Output]"
           TopLeft="97.25,80">
@@ -4107,13 +4085,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="141,42"
-          Id="Package\Parallel Execution of Data Flow Tasks\CONS_ALT csv to postgre\CONS Table"
-          TopLeft="349,106" />
-        <NodeLayout
           Size="128,42"
           Id="Package\Parallel Execution of Data Flow Tasks\CONS_ALT csv to postgre\CSV FILE"
           TopLeft="30,38" />
+        <NodeLayout
+          Size="141,42"
+          Id="Package\Parallel Execution of Data Flow Tasks\CONS_ALT csv to postgre\CONS Table"
+          TopLeft="349,106" />
         <EdgeLayout
           Id="Package\Parallel Execution of Data Flow Tasks\CONS_ALT csv to postgre.Paths[Flat File Source Output]"
           TopLeft="94,80">
@@ -4170,13 +4148,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="141,42"
-          Id="Package\Parallel Execution of Data Flow Tasks\CONS_PRIM csv to postgre\CONS Table"
-          TopLeft="158,187" />
-        <NodeLayout
           Size="128,42"
           Id="Package\Parallel Execution of Data Flow Tasks\CONS_PRIM csv to postgre\CSV FILE"
           TopLeft="30,38" />
+        <NodeLayout
+          Size="141,42"
+          Id="Package\Parallel Execution of Data Flow Tasks\CONS_PRIM csv to postgre\CONS Table"
+          TopLeft="158,187" />
         <EdgeLayout
           Id="Package\Parallel Execution of Data Flow Tasks\CONS_PRIM csv to postgre.Paths[Flat File Source Output]"
           TopLeft="94,80">
