@@ -16,7 +16,7 @@
                 "vess_owner",
                 "remarks"
             ],
-            "na_values": "-0-",
+            "na_values": "NULL",
             "skipfooter": 1,
             "engine": "python"
         }
@@ -32,7 +32,7 @@
                 "country",
                 "add_remarks"
             ],
-            "na_values": "-0-",
+            "na_values": "NULL",
             "skipfooter": 1,
             "engine": "python"
         }
@@ -47,7 +47,7 @@
                 "alt_name",
                 "alt_remarks"
             ],
-            "na_values": "-0-",
+            "na_values": "NULL",
             "skipfooter": 1,
             "engine": "python"
         }
