@@ -1,10 +1,9 @@
 # exclude packages and dependencies to github
 dev_env/
 
-# exclude json files
 *.json
+# except config.json
 !config.json
-
 .mypy_cache
 .vscode
 .vs
