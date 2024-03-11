@@ -7,5 +7,6 @@ matplotlib
 requests
 paramiko
 pysftp
-fastpi
+fastapi
 uvicorn
+rapidfuzz
