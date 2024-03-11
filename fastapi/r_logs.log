@@ -1,0 +1,60 @@
+INFO:root:Request: GET http://127.0.0.1:8000/users/4
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen
+INFO:root:Response: 422
+INFO:root:Request: GET http://127.0.0.1:8000/screen
+INFO:root:Response: 422
+INFO:root:Request: GET http://127.0.0.1:8000/screen
+INFO:root:Response: 422
+INFO:root:Request: GET http://127.0.0.1:8000/screen
+INFO:root:Response: 422
+INFO:root:Request: GET http://127.0.0.1:8000/screen
+INFO:root:Response: 422
+INFO:root:Request: GET http://127.0.0.1:8000/
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen
+INFO:root:Response: 422
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=HANIYA,%20Ismail%20Abdul%20Salah
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=HANIYA,%20Ismail%20Abdul%20Salah
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Juan%20Dela%20Cruz
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen
+INFO:root:Response: 422
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Juan%20Dela%20Cruz
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/
+INFO:root:Response: 404
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/
+INFO:root:Response: 404
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Juan%20Dela%20Cruz
+INFO:root:Response: 200
