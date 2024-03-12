@@ -42,8 +42,8 @@ def get_consolidated() -> pd.DataFrame:
     return df
 
 
-
-def standardize_name() -> pd.DataFrame:
+# name transformation
+def standardize_name():
     ...
     
     
