@@ -1,60 +1,61 @@
-INFO:root:Request: GET http://127.0.0.1:8000/users/4
-INFO:root:Response: 200
-INFO:root:Request: GET http://127.0.0.1:8000/screen
-INFO:root:Response: 422
-INFO:root:Request: GET http://127.0.0.1:8000/screen
-INFO:root:Response: 422
-INFO:root:Request: GET http://127.0.0.1:8000/screen
-INFO:root:Response: 422
-INFO:root:Request: GET http://127.0.0.1:8000/screen
-INFO:root:Response: 422
-INFO:root:Request: GET http://127.0.0.1:8000/screen
-INFO:root:Response: 422
-INFO:root:Request: GET http://127.0.0.1:8000/
-INFO:root:Response: 200
-INFO:root:Request: GET http://127.0.0.1:8000/screen
-INFO:root:Response: 422
-INFO:root:Request: GET http://127.0.0.1:8000/screen?name=HANIYA,%20Ismail%20Abdul%20Salah
-INFO:root:Response: 200
-INFO:root:Request: GET http://127.0.0.1:8000/screen?name=HANIYA,%20Ismail%20Abdul%20Salah
-INFO:root:Response: 200
-INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
-INFO:root:Response: 200
-INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
-INFO:root:Response: 200
-INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
-INFO:root:Response: 200
-INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
-INFO:root:Response: 200
-INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
-INFO:root:Response: 200
-INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
-INFO:root:Response: 200
-INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
-INFO:root:Response: 200
-INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
-INFO:root:Response: 200
-INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
-INFO:root:Response: 200
-INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Juan%20Dela%20Cruz
-INFO:root:Response: 200
-INFO:root:Request: GET http://127.0.0.1:8000/
-INFO:root:Response: 200
-INFO:root:Request: GET http://127.0.0.1:8000/screen
-INFO:root:Response: 422
-INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Juan%20Dela%20Cruz
-INFO:root:Response: 200
 INFO:root:Request: GET http://127.0.0.1:8000/
 INFO:root:Response: 404
 INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
 INFO:root:Response: 200
 INFO:root:Request: GET http://127.0.0.1:8000/
-INFO:root:Response: 404
-INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
 INFO:root:Response: 200
 INFO:root:Request: GET http://127.0.0.1:8000/
-INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
-INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
 INFO:root:Response: 200
-INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Juan%20Dela%20Cruz
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
+INFO:root:Response: 404
+INFO:root:Request: GET http://127.0.0.1:8000/screen
+INFO:root:Response: 404
+INFO:root:Request: GET http://127.0.0.1:8000/screen
+INFO:root:Response: 404
+INFO:root:Request: GET http://127.0.0.1:8000/screen/Josh
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen/
+INFO:root:Request: GET http://127.0.0.1:8000/screen/
+INFO:root:Response: 404
+INFO:root:Response: 404
+INFO:root:Request: GET http://127.0.0.1:8000/
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
+INFO:root:Response: 404
+INFO:root:Request: GET http://127.0.0.1:8000/screen
+INFO:root:Response: 404
+INFO:root:Request: GET http://127.0.0.1:8000/screen
+INFO:root:Response: 404INFO:root:Request: GET http://127.0.0.1:8000/
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/favicon.ico
+INFO:root:Response: 404
+INFO:root:Request: GET http://127.0.0.1:8000/screen?name=Joshua%20Ehd
+INFO:root:Response: 307
+INFO:root:Request: GET http://127.0.0.1:8000/screen/?name=Joshua%20Ehd
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen/?name=HANIYA
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen/?name=HANIYA
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen/?name=hjaniya
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen/?name=HANIYA
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen/?name=HANIYA,%20Ismail%20Abdul%20Salah
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen/?name=ABU%20TEIR,%20Mohammed
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen
+INFO:root:Response: 307
+INFO:root:Request: GET http://127.0.0.1:8000/screen/
+INFO:root:Response: 422
+INFO:root:Request: GET http://127.0.0.1:8000/docs
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/openapi.json
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen/?name=ABU%20TEIR%2C%20Mohammed&threshold=0.7
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen/?name=AB%20TEIR%2C%20Mohammed&threshold=0.7
+INFO:root:Response: 200
+INFO:root:Request: GET http://127.0.0.1:8000/screen/?name=NU%27MAN%20ALAEDDIN%2C%20Mohammed%20Ja&threshold=0.7
 INFO:root:Response: 200
