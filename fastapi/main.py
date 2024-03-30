@@ -1,10 +1,7 @@
-from typing import Union
-from urllib import response
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 from os import environ
-from sqlalchemy import create_engine, Engine, URL
+from sqlalchemy import create_engine
 from rapidfuzz import fuzz
-from fastapi.responses import ORJSONResponse
 import logging, pandas as pd, re
 
 # fastapi app
@@ -26,12 +23,15 @@ async def log_requests(request, call_next):
 
 # helper function
 def get_consolidated() -> pd.DataFrame:
+    """Get the ofac_cons_consolidated
+
+    Returns:
+        pd.DataFrame: Returns a dataframe with selected column in the created query
+    """
+    
     # Get postgresql environment variables
-    db_host = environ['DB_HOST']
-    db_name = environ['DB_NAME']
-    db_user = environ['DB_USER']
-    db_pass = environ['DB_PASS']
-    db_port = environ['DB_PORT']
+    db = [environ['DB_HOST'], environ['DB_NAME'], environ['DB_USER'], environ['DB_PASS'], environ['DB_PORT'] ]
+    db_host, db_name, db_user, db_pass, db_port = db
     
     # engine to connect to postgre
     engine = create_engine(f'postgresql://{db_user}:{db_pass}@{db_host}:{db_port}/{db_name}')
@@ -43,25 +43,62 @@ def get_consolidated() -> pd.DataFrame:
 
 
 # name transformation
-def standardize_name():
-    ...
-    
+def standardize_name(name: str) -> str:
+    """Create and format the name in the set standard.
+
+    Args:
+        name (str): Value of the name in the column
+
+    Returns:
+        str: The standardized name
+    """
+    clean_name = re.sub('[,]', ' ', name).upper()
+    clean_name = re.sub("[^A-Z0-9\\s]", "", clean_name)
+    clean_name = re.sub("\\s+", " ", clean_name)    
+    return clean_name
     
 
+def get_ratio(s1: str, s2: str, sort_names: bool = False) -> float | None:
+    """Calculate the ration of the two strings_
+
+    Args:
+        s1 (str): First string
+        s2 (str): Second String
+        sort_names (bool, optional): . Defaults to False.
+
+    Returns:
+        float | None: Returns the ratio of the compared string else returns None
+    """
+    if sort_names:
+        s1 = " ".join(sorted(s1.split()))
+        s2 = " ".join(sorted(s2.split()))
+    
+    # return None on error
+    try:
+        return round(fuzz.ratio(s1, s2)/100, 4)
+    except:
+        return None
+
 # Screening app for fastpi
-@app.get('/screen')
+@app.get('/screen/')
 async def screen(name: str, threshold: float=0.7) -> dict:
-    df = get_consolidated().head().fillna('-')
-    response = df.to_dict(orient="records")
+    cleaned_name = standardize_name(name)
+    sanctions = get_consolidated()
+    
+    
+    sanctions['similiratiy_score'] = sanctions['cleaned_names'].apply(get_ratio, args=(cleaned_name,))
+    sanctions_filtered = sanctions[sanctions['similiratiy_score'] >= threshold]
+    
+    response = sanctions_filtered.fillna("-").to_dict(orient="records")
     return {
         "status": "success",
         "response": response
-    }        
+    }
         
-    
-# @app.get("/")
-# def read_root():
-#     return {"Hello": "World"}
+# home route
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
 
 # @app.get("/users/{user_id}")
 # async def get_user_id(user_id: int) -> dict[str, int]:
